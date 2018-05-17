@@ -16,22 +16,24 @@
 }
 
 .container{
-  padding: 1% 2% 1% 2%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap:1em;
-  grid-column-gap:1em;
+  /*margin-left: -34%;*/
+  /*!*EDITED ABOVE*!*/
+  /*padding: 1% 2% 1% 2%;*/
+  /*display: grid;*/
+  /*grid-template-columns: 1fr;*/
+  /*grid-row-gap:1em;*/
+  /*grid-column-gap:1em;*/
   justify-items: center;
-  background-color: rgba(0,0,0,0.288);
+  /*background-color: rgba(0,0,0,0.288);*/
 }
 
 .form-container{
-  padding: 1% 5% 1% 5%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap:1em;
-  grid-column-gap:4em;
-  justify-items: stretch;
+  /*padding: 1% 5% 1% 5%;*/
+  /*display: grid;*/
+  /*grid-template-columns: 1fr;*/
+  /*grid-row-gap:1em;*/
+  /*grid-column-gap:4em;*/
+  /*justify-items: stretch;*/
 }
 
 .col1{
@@ -56,7 +58,7 @@
 }
 
 .mat-card{
-  width: 50%;
+  width: 100%;
 }
 
 .btn{

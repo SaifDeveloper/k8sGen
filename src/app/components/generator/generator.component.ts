@@ -12,8 +12,12 @@ export class GeneratorComponent implements OnInit {
 
   isLinear = false;
   step1: FormGroup;
-  secondFormGroup: FormGroup;
-
+  step2: FormGroup;
+  step3: FormGroup;
+  step4: FormGroup;
+  step5: FormGroup;
+  step6: FormGroup;
+  step7: FormGroup;
 
   select;
 
@@ -23,7 +27,22 @@ export class GeneratorComponent implements OnInit {
       version:['',Validators.required],
       sdk_gen:['',Validators.required]
     });
-    this.secondFormGroup = this._formBuilder.group({
+    this.step2 = this._formBuilder.group({
+      secondCtrl: ['', Validators.required]
+    });
+    this.step3 = this._formBuilder.group({
+      secondCtrl: ['', Validators.required]
+    });
+    this.step4 = this._formBuilder.group({
+      secondCtrl: ['', Validators.required]
+    });
+    this.step5 = this._formBuilder.group({
+      secondCtrl: ['', Validators.required]
+    });
+    this.step6 = this._formBuilder.group({
+      secondCtrl: ['', Validators.required]
+    });
+    this.step7 = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
   }
