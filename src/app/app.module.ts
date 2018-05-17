@@ -7,14 +7,20 @@ import {MaterialModule} from './shared/material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { GeneratorComponent } from './components/generator/generator.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent  }
+  { path: 'gen', component: GeneratorComponent  },
+  { path: '', component: HomeComponent  }
+
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    GeneratorComponent
   ],
   imports: [
     BrowserModule,

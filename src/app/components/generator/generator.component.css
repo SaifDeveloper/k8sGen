@@ -1,0 +1,96 @@
+
+.form-container > * {
+  width: 100%;
+}
+.example-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.example-selected-value {
+  margin: 15px 0;
+}
+
+.container{
+  padding: 1% 2% 1% 2%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap:1em;
+  grid-column-gap:1em;
+  justify-items: center;
+  background-color: rgba(0,0,0,0.288);
+}
+
+.form-container{
+  padding: 1% 5% 1% 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap:1em;
+  grid-column-gap:4em;
+  justify-items: stretch;
+}
+
+.col1{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap:1em;
+  grid-column-gap:1em;
+  justify-items: stretch;
+  padding: 0 1% 0 1%;
+}
+.col2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap:1em;
+  grid-column-gap:1em;
+  justify-items: stretch;
+  padding: 0 1% 0 1%;
+}
+
+.mat-card-title{
+  font-weight: bolder;
+}
+
+.mat-card{
+  width: 50%;
+}
+
+.btn{
+  width: 16% !important;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 600px) {
+  .mat-card[_ngcontent-c3] {
+    width: 85%;
+  }
+  .form-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap:1em;
+    grid-column-gap:4em;
+    justify-items: stretch;
+    padding: 1% 5% 1% 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .mat-card[_ngcontent-c3] {
+    width: 100%;
+    background-color: white;
+  }
+  .form-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap:1em;
+    grid-column-gap:4em;
+    justify-items: stretch;
+    padding: 1% 5% 1% 5%;
+  }
+}
+
