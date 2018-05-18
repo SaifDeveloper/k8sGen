@@ -19,7 +19,7 @@ export class GeneratorComponent implements OnInit {
   step6: FormGroup;
   step7: FormGroup;
 
-  select;
+  select_orderer;step;
 
   ngOnInit() {
     this.step1 = this._formBuilder.group({
@@ -27,9 +27,20 @@ export class GeneratorComponent implements OnInit {
       version:['',Validators.required],
       sdk_gen:['',Validators.required]
     });
+
     this.step2 = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
+      orderer: ['', Validators.required],
+      orderer_nodes: ['', Validators.required],
+      organizaion:['', Validators.required],
+      peers_per_org:['', Validators.required],
+      world_state_db:['', Validators.required],
+      add_ca:['']
     });
+
+    this.step2.get('orderer').valueChanges.subscribe(value => this.select_orderer = value);
+
+
+
     this.step3 = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
@@ -45,6 +56,11 @@ export class GeneratorComponent implements OnInit {
     this.step7 = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
+  }
+
+  showdata(step){
+    this.step = step;
+    console.log(this.step.value);
   }
 
 }
